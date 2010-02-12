@@ -980,7 +980,7 @@
       if ( is_old_ie ) {
         
         // Create hidden IFRAME at the end of the body.
-        iframe = $('<iframe src="javascript:0"/>').hide().appendTo( 'body' )[0].contentWindow;
+        iframe = $('<iframe src="javascript:0"/>').hide().insertAfter( 'body' )[0].contentWindow;
         
         // Get history by looking at the hidden IFRAME's location.hash.
         get_history = function() {
